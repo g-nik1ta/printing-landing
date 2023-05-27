@@ -1,0 +1,65 @@
+.select {
+    position: relative;
+}  
+
+.select::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: no-repeat center/100% url("../../../assets/languages.svg");
+    margin-right: 8px;
+} 
+
+.select .selectedSort {
+    display: flex;
+    align-items: baseline;
+}
+
+.select .selectedSort::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: no-repeat center/100% url("../../../assets/arrow.svg");
+    margin-left: 8px;
+    transition: .2s all ease-in;
+}
+
+.select.visibleMenu .dropdownMenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.select.visibleMenu .selectedSort::after {
+    transform: rotate(180deg);
+}
+
+.select.visibleMenu:hover .dropdownMenu span {
+    color: #000;
+}
+
+.select .dropdownMenu {
+    opacity: 0;
+    transform: translateY(-20px) scale(.93);
+    visibility: hidden;
+    top: 36px;
+    width: 80px;
+    z-index: 9999;
+    position: absolute;
+    transition: .2s all ease-in;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.select .dropdownMenu span {
+    padding: 10px 15px;
+    transition: .1s all ease-in;
+    display: block;
+}
+
+.select .dropdownMenu span:hover {
+    background: rgba(0, 0, 0, 0.17);
+}

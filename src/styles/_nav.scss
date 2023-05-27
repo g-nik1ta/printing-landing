@@ -1,0 +1,45 @@
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+
+    .item {
+        color: #000;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: .14s all ease-in-out;
+
+        &.telephone::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: block;
+            background: no-repeat center/100% url("../assets/telephone.svg");
+            margin-right: 8px;
+        }
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    // button {
+    //     margin: 0 28px;
+    //     background-color: #D1FAE5;
+    //     color: #047857;
+    //     transition: .8s all ease-in;
+
+    //     &:hover {
+    //         background-color: #047857;
+    //         color: #D1FAE5;
+    //     }
+    // }
+}

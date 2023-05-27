@@ -1,0 +1,25 @@
+@import 'config';
+@import 'nav';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#root {
+    max-width: 100vw;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+    font-family: Arial;
+}
+
+.row {
+    max-width: 1536px;
+}

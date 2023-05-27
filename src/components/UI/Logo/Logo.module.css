@@ -1,0 +1,15 @@
+.logo {
+    min-width: 240px;
+    min-height: 40px;
+    padding: 8px;
+    background-color: #121618;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .title {
+    font-size: 30px;
+    color: #ffff00;
+    text-transform: uppercase;
+}
