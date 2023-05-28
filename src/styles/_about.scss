@@ -1,0 +1,40 @@
+.about {
+    width: 100%;
+    display: flex;
+
+    .info-block {
+        width: 65%;
+        margin-top: 80px;
+        padding-left: 60px;
+        padding-right: 18px;
+
+        .title {
+            font-size: 48px;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+        a {
+            display: inline-flex !important;
+            margin-left: 40px;
+        }
+
+        .subtitle {
+            font-size: 42px;
+            color: #6f6f6f;
+            padding: 28px 0;
+        }
+
+        .text {
+            font-size: 18px;
+            text-align: justify;
+            line-height: 26px;
+            font-weight: bold;
+        }
+    }
+
+    img {
+        width: 35%;
+        opacity: .35;
+    }
+}
