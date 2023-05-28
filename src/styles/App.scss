@@ -1,6 +1,7 @@
 @import 'config';
 @import 'nav';
 @import 'header';
+@import 'services';
 
 * {
     margin: 0;
@@ -23,4 +24,5 @@
 
 .row {
     max-width: 1536px;
+    margin-bottom: 8px;
 }
