@@ -37,6 +37,94 @@ nav .item:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
+header {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+}
+header img {
+  width: 100%;
+  opacity: 0.75;
+  display: block;
+  pointer-events: none;
+}
+header .aplication {
+  position: absolute;
+  top: 100px;
+  left: 24px;
+  display: block;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 4px 16px;
+  background-color: rgba(255, 255, 0, 0.47);
+  border: 2px solid #ffff00;
+  cursor: pointer;
+  transition: 0.2s all ease-out;
+}
+header .aplication:hover {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+header .select-box {
+  position: absolute;
+  top: 180px;
+  right: 26px;
+}
+header .select-box .item {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  border-radius: 50%;
+  border: 3px solid #f0f0f0;
+}
+header .select-box .messager {
+  z-index: 1;
+  position: relative;
+  background-image: url("../assets/header/message.svg");
+}
+header .select-box .viber {
+  background-image: url("../assets/header/viber.svg");
+}
+header .select-box .telegram {
+  background-image: url("../assets/header/telegram.svg");
+}
+header .select-box .dropdownMenu {
+  width: 40px;
+  height: 80px;
+  visibility: hidden;
+  opacity: 0;
+  top: -50%;
+  left: -100%;
+  position: absolute;
+  transition: 0.5s all cubic-bezier(1, -0.05, 0.95, 0.8);
+}
+header .select-box .dropdownMenu .item {
+  position: absolute;
+  background-color: #f0f0f0;
+  transition: 0.5s all ease-in;
+  transform: translate(100%, 50%);
+}
+header .select-box.visibleMsg .dropdownMenu {
+  visibility: visible;
+  opacity: 1;
+}
+header .select-box.visibleMsg .dropdownMenu .telegram {
+  transform: translate(0%, 130%);
+}
+header .select-box.visibleMsg .dropdownMenu .telegram:hover {
+  transform: translate(0%, 130%) scale(1.05);
+}
+header .select-box.visibleMsg .dropdownMenu .viber {
+  transform: translate(0%, -30%);
+}
+header .select-box.visibleMsg .dropdownMenu .viber:hover {
+  transform: translate(0%, -30%) scale(1.05);
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -6,8 +6,8 @@ const Nav = () => {
     const [lang, setLang] = useState('uk');
 
     const sortOptions = [
-        { value: 'uk', name: 'UK' },
         { value: 'ru', name: 'RU' },
+        { value: 'uk', name: 'UK' },
         { value: 'en', name: 'EN' },
     ]
 
