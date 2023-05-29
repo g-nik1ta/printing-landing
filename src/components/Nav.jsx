@@ -3,11 +3,11 @@ import MySelect from './UI/MySelect/MySelect';
 import Logo from './UI/Logo/Logo';
 
 const Nav = () => {
-    const [lang, setLang] = useState('uk');
+    const [lang, setLang] = useState('ru');
 
     const sortOptions = [
-        { value: 'ru', name: 'RU' },
         { value: 'uk', name: 'UK' },
+        { value: 'ru', name: 'RU' },
         { value: 'en', name: 'EN' },
     ]
 
