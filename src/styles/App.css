@@ -640,7 +640,17 @@ footer .wrapper img {
   color: #5f6d92;
   background-color: #f5f5f5;
 }
-.sidebar-nav ul .item {
+.sidebar-nav ul div.item {
+  padding: 15px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  transition: 0.14s all ease-in-out;
+}
+.sidebar-nav ul .item:not(div) {
   display: block;
   color: inherit;
   padding: 15px;
@@ -649,7 +659,7 @@ footer .wrapper img {
   text-overflow: ellipsis;
   transition: 0.15s all ease-in;
 }
-.sidebar-nav ul .item:hover {
+.sidebar-nav ul .item:not(div):hover {
   background-color: #f5f5f5;
 }
 

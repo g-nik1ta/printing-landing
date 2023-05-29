@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MySelect from './UI/MySelect/MySelect';
 
 const SidebarNav = () => {
+    const [lang, setLang] = useState('ru');
+
+    const sortOptions = [
+        { value: 'uk', name: 'UK' },
+        { value: 'ru', name: 'RU' },
+        { value: 'en', name: 'EN' },
+    ]
     return (
         <div className='sidebar-nav'>
             <ul>
@@ -28,6 +36,13 @@ const SidebarNav = () => {
                 </li>
                 <li>
                     <a href="tel:+380-11-223-3445" className='item telephone'>+380112233445</a>
+                </li>
+                <li>
+                    <MySelect
+                        value={(sortOptions.find(e => e.value === lang)).name}
+                        onChange={selectedCategory => setLang(selectedCategory)}
+                        options={sortOptions}
+                    />
                 </li>
             </ul>
         </div >
