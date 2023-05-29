@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Clients = () => {
-    const settings = {
+    const [settings, setSettings] = useState({
         className: "clients-slider",
         infinite: true,
         slidesToShow: 1,
@@ -12,7 +12,7 @@ const Clients = () => {
         rows: 2,
         slidesPerRow: 4,
         draggable: false,
-    };
+    })
 
     const images = [
         'epicentr.png',
@@ -33,6 +33,25 @@ const Clients = () => {
         'in-cruises.png',
         'yatran.jpg',
     ]
+
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth <= 320) {
+                setSettings({
+                    ...settings,
+                    slidesPerRow: 1,
+                }) 
+            } else {
+                setSettings({
+                    ...settings,
+                    slidesPerRow: 4,
+                }) 
+            }
+        }
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <section className='row clients' id='clients'>

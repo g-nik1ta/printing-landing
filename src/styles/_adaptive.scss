@@ -1,17 +1,219 @@
 @media (max-width: 320px) {
+    .row {
+        max-width: 320px !important;
+    }
+
     .App {
         padding: 0 !important;
     }
 
     nav {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #fff;
+        padding: 12px 0;
+        margin: 0;
         justify-content: space-around;
-        
+
         .item {
             display: none;
         }
 
         .navMenu {
             display: flex;
+        }
+    }
+
+    header {
+        .aplication {
+            left: 10px;
+            top: 10px;
+            font-size: 20px;
+        }
+
+        .select-box {
+            top: 70px;
+            right: 15px;
+        }
+    }
+
+    .services,
+    .portfolio {
+        .img-list:first-child .item:nth-of-type(2) {
+            order: -1;
+        }
+
+        .img-list {
+            flex-direction: column;
+
+            .item {
+                height: 300px;
+                flex-basis: initial;
+
+                .title {
+                    padding: 8px 16px;
+                    width: 85% !important;
+                }
+            }
+        }
+    }
+
+    .about {
+        flex-direction: column;
+
+        .info-block {
+            width: 100%;
+            padding: 0 8px;
+            text-align: center;
+
+            a {
+                display: none !important;
+            }
+
+            .text {
+                max-height: 400px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                padding-right: 4px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        img {
+            width: 100%;
+            margin-top: -340px;
+        }
+    }
+
+    .advantage {
+        flex-direction: column;
+        padding: 0 8px;
+        height: auto;
+
+        .title {
+            transform: initial;
+            font-size: 36px;
+            padding: 16px 0;
+        }
+
+        .items-box {
+            width: 100%;
+
+            .item {
+                margin: 10px 0;
+
+                span {
+                    font-size: 18px;
+                }
+
+                img {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+    .products {
+        flex-direction: column;
+        height: auto;
+
+        .title {
+            order: -1;
+            border: none;
+        }
+
+        .list-container .item {
+            width: 100%;
+            font-size: 14px;
+            padding: 10px 12px;
+
+            &::before {
+                min-width: 12px;
+                min-height: 12px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .clients {
+        &::before, &::after {
+            height: 300px;
+        }
+        .title {
+            font-size: 32px;
+            z-index: 1;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .clients-slider {
+            padding: 0;
+            z-index: 1;
+
+            .slick-arrow {
+                width: 40px;
+                height: 40px;
+            }
+
+            .slick-prev {
+                left: -42px;
+            }
+
+            .slick-next {
+                right: -38px;
+            }
+
+            .item {
+                width: 230px !important;
+                height: 230px;
+                margin-bottom: -4px;
+            }
+        }
+    }
+
+    .contacts {
+        flex-direction: column;
+
+        .info-box {
+            width: 100%;
+            padding: 0 8px;
+
+            p {
+                font-size: 22px;
+                line-height: 45px;
+            }
+
+            .title {
+                margin-bottom: 50px;
+            }
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 450px;
+        }
+    }
+
+    footer {
+        margin-bottom: 200px;
+        
+        nav {
+            display: none;
+        }
+
+        hr {
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .wrapper {
+            flex-direction: column;
+
+            img {
+                padding: 10px 0 0;
+            }
         }
     }
 }
