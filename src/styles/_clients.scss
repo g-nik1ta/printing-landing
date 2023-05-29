@@ -1,0 +1,66 @@
+.clients {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 550px;
+        width: 10px;
+        background-color: #fdd503;
+    }
+
+    &::before {
+        left: 5%;
+        top: 0;
+    }
+
+    &::after {
+        right: 5%;
+        bottom: 0;
+    }
+
+    .title {
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 100px 0;
+        display: block;
+    }
+
+    .clients-slider {
+        margin-bottom: 80px;
+        max-width: 75%;
+        padding: 0 50px;
+
+        .slick-arrow {
+            width: 50px;
+            height: 50px;
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: no-repeat center/100% url("../assets/arrow.svg");
+                display: block;
+            }
+
+            &.slick-prev::before {
+                transform: rotate(180deg);
+            }
+        }
+
+        .item {
+            width: 240px !important;
+            height: 240px;
+            object-fit: contain;
+            border: 1px solid #000;
+            margin-bottom: -3px;
+            padding: 25px 0;
+        }
+    }
+}
