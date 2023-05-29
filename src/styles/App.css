@@ -440,6 +440,58 @@ footer .wrapper img {
   padding-left: 30px;
 }
 
+@media (max-width: 320px) {
+  .App {
+    padding: 0 !important;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  nav .item {
+    display: none;
+  }
+  nav .navMenu {
+    display: flex;
+  }
+}
+.sidebar-nav {
+  width: 240px;
+  height: 100vh;
+  left: -240px;
+  z-index: 99999;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.5) -5px 0 53px;
+  transition: left 0.25s ease-in-out;
+}
+.sidebar-nav.open {
+  left: 0;
+}
+.sidebar-nav ul {
+  list-style: none;
+}
+.sidebar-nav ul > * {
+  border-bottom: 1px solid #f5f5f5;
+}
+.sidebar-nav ul .title {
+  padding: 20px;
+  font-size: 22px;
+  color: #5f6d92;
+  background-color: #f5f5f5;
+}
+.sidebar-nav ul .item {
+  display: block;
+  color: inherit;
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.15s all ease-in;
+}
+.sidebar-nav ul .item:hover {
+  background-color: #f5f5f5;
+}
+
 * {
   margin: 0;
   padding: 0;

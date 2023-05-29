@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MySelect from './UI/MySelect/MySelect';
 import Logo from './UI/Logo/Logo';
+import NavMenu from './UI/NavMenu/NavMenu';
 
 const Nav = () => {
     const [lang, setLang] = useState('ru');
@@ -22,6 +23,7 @@ const Nav = () => {
             <a href='#clients' className='item'>Клиенты</a>
             <a href='#contacts' className='item'>Контакты</a>
             <a href="tel:+380-11-223-3445" className='item telephone'>+380112233445</a>
+            <NavMenu/>
             <MySelect
                 value={(sortOptions.find(e => e.value === lang)).name}
                 onChange={selectedCategory => setLang(selectedCategory)}

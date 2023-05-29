@@ -10,6 +10,7 @@ import Portfolio from './components/Portfolio';
 import Clients from './components/Clients';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
+import SidebarNav from './components/SidebarNav';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
             <Clients/>
             <Contacts/>
             <Footer/>
+            <SidebarNav/>
         </div>
     );
 }
