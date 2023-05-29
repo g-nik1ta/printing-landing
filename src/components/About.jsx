@@ -3,7 +3,7 @@ import Logo from './UI/Logo/Logo';
 
 const About = () => {
     return (
-        <section className='row about'>
+        <section className='row about' id='about'>
             <div className='info-block'>
                 <span className='title'>Компания</span>
                 <Logo />

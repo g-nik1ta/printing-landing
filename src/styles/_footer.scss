@@ -1,0 +1,27 @@
+footer {
+    width: 100%;
+    margin-bottom: 500px;
+
+    hr {
+        width: 800px;
+        height: 3px;
+        background-color: #6f6f6f;
+        margin: 40px auto 0;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        padding: 20px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 14px;
+        }
+
+        img {
+            padding-left: 30px;
+        }
+    }
+}

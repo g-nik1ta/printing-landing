@@ -22,7 +22,7 @@ const Products = () => {
     ]
 
     return (
-        <section className='row products'>
+        <section className='row products' id='products'>
             <div className="list-container">
                 {items1.map((item, index) => (
                     <span className='item' key={index}>{item}</span>

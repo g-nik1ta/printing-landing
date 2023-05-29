@@ -14,7 +14,7 @@ const Portfolio = () => {
     ]
 
     return (
-        <section className='row portfolio'>
+        <section className='row portfolio' id='portfolio'>
             {list.map((igmList, indexList) => (
                 <div className='img-list' key={indexList}>
                     {igmList.map((item, index) => (

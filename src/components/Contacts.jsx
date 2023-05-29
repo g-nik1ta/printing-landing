@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contacts = () => {
     return (
-        <section className='row contacts'>
+        <section className='row contacts' id='contacts'>
             <div className="info-box">
                 <span className="title">Контакты</span>
                 <p>Адрес: 12542, Украина, г. Киев ул. Шевченка, 1</p>

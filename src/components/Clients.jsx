@@ -35,7 +35,7 @@ const Clients = () => {
     ]
 
     return (
-        <section className='row clients'>
+        <section className='row clients' id='clients'>
             <span className='title'>Наши клиенты - наша гордость</span>
             <Slider {...settings}>
                 {images.map(item => (

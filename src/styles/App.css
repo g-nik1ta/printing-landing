@@ -415,6 +415,31 @@ header .select-box.visibleMsg .dropdownMenu .viber:hover {
   height: 700px;
 }
 
+footer {
+  width: 100%;
+  margin-bottom: 500px;
+}
+footer hr {
+  width: 800px;
+  height: 3px;
+  background-color: #6f6f6f;
+  margin: 40px auto 0;
+}
+footer .wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+footer .wrapper span {
+  font-size: 14px;
+}
+footer .wrapper img {
+  padding-left: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -14,13 +14,13 @@ const Nav = () => {
     return (
         <nav className='row'>
             <Logo />
-            <span className='item'>О нас</span>
-            <span className='item'>Что печатаем</span>
-            <span className='item'>Услуги</span>
+            <a href='#about' className='item'>О нас</a>
+            <a href='#products' className='item'>Что печатаем</a>
+            <a href='#services' className='item'>Услуги</a>
             <span className='item'>Партнерам</span>
-            <span className='item'>Портфолио</span>
-            <span className='item'>Клиенты</span>
-            <span className='item'>Контакты</span>
+            <a href='#portfolio' className='item'>Портфолио</a>
+            <a href='#clients' className='item'>Клиенты</a>
+            <a href='#contacts' className='item'>Контакты</a>
             <a href="tel:+380-11-223-3445" className='item telephone'>+380112233445</a>
             <MySelect
                 value={(sortOptions.find(e => e.value === lang)).name}

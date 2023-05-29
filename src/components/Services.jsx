@@ -23,7 +23,7 @@ const Services = () => {
     ]
 
     return (
-        <section className='row services'>
+        <section className='row services' id='services'>
             {list.map((igmList, indexList) => (
                 <div className='img-list' key={indexList}>
                     {igmList.map((item, index) => (
